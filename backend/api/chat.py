@@ -3,7 +3,6 @@ from fastapi.responses import StreamingResponse
 
 from db.database import get_db
 from db.session_store import get_history, save_history
-from agent.intent_guard import classify_intent, OFF_TOPIC_RESPONSE
 from agent.loop import run_agent, _sse
 from schemas.chat import ChatRequest
 
@@ -16,12 +15,6 @@ router = APIRouter()
 async def chat(request: ChatRequest, db=Depends(get_db)):
     async def event_stream():
         history = await get_history(db, request.session_id)
-
-        intent = await classify_intent(request.message, history=history)
-        if intent == "off_topic":
-            yield _sse({"type": "text", "content": OFF_TOPIC_RESPONSE})
-            yield _sse({"type": "done", "final_messages": history})
-            return
 
         final_messages = history
         async for event in run_agent(
