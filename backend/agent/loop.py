@@ -45,6 +45,31 @@ def _build_groq_tools() -> list:
     ]
 
 
+def _simplify_for_groq(tool_name: str, result: dict) -> str:
+    """Convert tool results to a concise string for Groq's context window.
+    Avoids 400 errors from nested arrays/large payloads."""
+    if tool_name == "get_installation_guide":
+        steps = result.get("steps", [])
+        steps_text = "\n".join(f"{i+1}. {s}" for i, s in enumerate(steps))
+        return (
+            f"Installation guide for {result.get('part_number', '')} "
+            f"({result.get('part_name', '')}):\n{steps_text}\n"
+            f"Difficulty: {result.get('difficulty', 'moderate')}. "
+            f"{result.get('notes', '')}"
+        )
+    if tool_name == "search_products":
+        products = result.get("products", [])
+        lines = [f"Found {len(products)} product(s):"]
+        for p in products[:5]:
+            lines.append(f"- {p.get('part_number')}: {p.get('name')} ${p.get('price')} {'In Stock' if p.get('in_stock') else 'Out of Stock'}")
+        return "\n".join(lines)
+    if tool_name == "get_troubleshooting":
+        steps = result.get("steps", [])
+        return f"Troubleshooting: {result.get('issue', '')}\n" + "\n".join(f"{i+1}. {s}" for i, s in enumerate(steps))
+    # Default: compact JSON
+    return json.dumps(result, default=str)[:1500]
+
+
 async def run_agent(
     message: str,
     history: List[dict],
@@ -85,7 +110,13 @@ async def run_agent(
                 max_tokens=2048,
             )
         except Exception as e:
-            yield _sse({"type": "error", "content": str(e)})
+            # If tools already ran this turn, end gracefully instead of showing raw error
+            if round_num > 0 or called_tools:
+                updated_history.append({"role": "user", "content": message})
+                updated_history.append({"role": "assistant", "content": ""})
+                yield _sse({"type": "done", "final_messages": updated_history})
+            else:
+                yield _sse({"type": "error", "content": "Something went wrong. Please try again."})
             return
 
         choice = response.choices[0]
@@ -197,10 +228,14 @@ async def run_agent(
 
             yield _sse({"type": "tool_result", "tool": tc["name"], "result": result_data})
 
+            # Simplify complex nested results before sending back to Groq
+            # to avoid 400 "tool_use_failed" errors from large/nested payloads
+            groq_content = _simplify_for_groq(tc["name"], result_data)
+
             messages.append({
                 "role": "tool",
                 "tool_call_id": tc["id"],
-                "content": json.dumps(result_data, default=str),
+                "content": groq_content,
             })
 
     yield _sse({"type": "error", "content": "Max reasoning rounds reached."})
