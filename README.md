@@ -3,7 +3,8 @@
 An AI-powered chat assistant for PartSelect, an appliance parts e-commerce platform. Built as a full-stack agentic application that helps customers find refrigerator and dishwasher parts, check compatibility, get installation guidance, manage a cart, and track orders.
 
 **Live Demo:** https://partselect-chat-agent.vercel.app  
-**Backend API:** https://partselect-chat-agent-production.up.railway.app/health
+**Backend API:** https://partselect-chat-agent-production.up.railway.app/health  
+**Demo Videos:** https://loom.com/share/folder/3f75ade7c8464ba8b8ab8b60469ddf59
 
 ---
 
