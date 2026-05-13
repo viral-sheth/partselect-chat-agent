@@ -22,23 +22,97 @@ Users can have a natural conversation to:
 ## Architecture
 
 ```
-User → Next.js Frontend → FastAPI Backend → Groq (Llama 4 Scout)
-                                         ↓
-                              ChromaDB (semantic search)
-                              SQLite (products, cart, orders)
-                              SentenceTransformers (embeddings)
+┌─────────────────────────────────────────────────────────────────────┐
+│                         FRONTEND (Vercel)                           │
+│                                                                     │
+│   ┌──────────────┐    ┌──────────────────┐    ┌─────────────────┐  │
+│   │  ChatWindow  │    │  MessageBubble   │    │   Rich Cards    │  │
+│   │  InputBar    │    │  (Markdown)      │    │  ProductCard    │  │
+│   │  CartPanel   │    │  SSE stream      │    │  CompatCard     │  │
+│   └──────┬───────┘    └──────────────────┘    │  InstallCard    │  │
+│          │  usePartSelectChat.ts (Zustand)     └─────────────────┘  │
+└──────────┼──────────────────────────────────────────────────────────┘
+           │  POST /v1/chat   (SSE stream)
+           ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                         BACKEND (Railway)                           │
+│                                                                     │
+│   FastAPI ──► Agent Loop (loop.py)                                  │
+│                    │                                                │
+│                    ▼                                                │
+│            Groq API  ◄──────────────────────────────────┐          │
+│         (Llama 4 Scout)                                 │          │
+│                    │  tool_calls[]                       │          │
+│                    ▼                                     │          │
+│   ┌────────────────────────────────────────────────┐    │          │
+│   │               Tool Registry                    │    │          │
+│   │                                                │    │          │
+│   │  search_products ──► ChromaDB (vector search)  │    │          │
+│   │  check_compatibility ──► SQLite                │    │          │
+│   │  get_installation_guide ──► dynamic generator  │    │          │
+│   │  get_troubleshooting ──► SQLite                │    │          │
+│   │  add_to_cart / get_cart ──► SQLite             │    │          │
+│   │  get_order_status ──► SQLite                   │    │          │
+│   └────────────────────┬───────────────────────────┘    │          │
+│                        │  tool results                   │          │
+│                        └─────────────────────────────────┘          │
+│                                                                     │
+│   ┌─────────────────────┐    ┌──────────────────────────────────┐  │
+│   │  ChromaDB           │    │  SQLite (SQLAlchemy async)        │  │
+│   │  73 parts embedded  │    │  products, cart, orders,          │  │
+│   │  all-MiniLM-L6-v2   │    │  compatibility, sessions          │  │
+│   └─────────────────────┘    └──────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-### How the Agent Works
+---
 
-1. User sends a message
-2. **Intent Guard** classifies the message (Groq LLM) — blocks off-topic requests instantly
-3. **Agent Loop** sends conversation history + 7 available tools to Llama 4 Scout
-4. LLM decides to call a tool or respond directly
-5. Tools execute (search ChromaDB, query SQLite, etc.) and results stream back
-6. LLM generates a final response with structured data
-7. Frontend renders tool results as rich cards (product cards, compatibility results, etc.)
-8. Everything streams via **Server-Sent Events** in real time
+## How the System Works — Request Flow
+
+Here is the end-to-end journey of a single user message through the system:
+
+```
+User types: "My dishwasher is not draining"
+```
+
+**1. Frontend captures the message**
+- `usePartSelectChat.ts` appends the message optimistically to the UI
+- Opens a `fetch()` SSE stream to `POST /v1/chat` with `{ message, session_id }`
+
+**2. FastAPI receives the request**
+- `chat.py` loads the session's conversation history from SQLite
+- Passes the full history + new message to the Agent Loop
+
+**3. Agent Loop builds the LLM context**
+- `loop.py` constructs: `[system_prompt] + [conversation history] + [new user message]`
+- Attaches all 7 tool definitions in OpenAI function-calling format
+- Sends to Groq (Llama 4 Scout) via async API call
+
+**4. LLM decides to call a tool**
+- Groq returns `tool_calls: [{ name: "get_troubleshooting", args: { issue: "dishwasher not draining", ... } }]`
+- The loop emits `{"type": "tool_start", "tool": "get_troubleshooting"}` over SSE
+
+**5. Tool executes**
+- `get_troubleshooting` queries SQLite for matching symptoms, returns step-by-step diagnosis
+- Result is simplified to plain text (`_simplify_for_groq`) before feeding back to the LLM
+
+**6. LLM generates the final response**
+- The simplified tool result is appended to the message context as a `role: tool` message
+- Groq produces a natural-language reply with numbered steps
+- The loop emits `{"type": "text", "content": "..."}` chunks over SSE as they arrive
+
+**7. Done event closes the turn**
+- Loop emits `{"type": "done", "final_messages": [...]}` 
+- `chat.py` saves the updated conversation history back to SQLite
+
+**8. Frontend renders the result**
+- `MessageBubble` receives streamed text and renders it through the inline Markdown parser
+- Bold, lists, numbered steps render natively — no external library needed
+- For product/compatibility/installation tools, the matching rich card component mounts automatically
+
+```
+Total latency: ~600–900ms to first token, ~2s for a full tool-call round trip
+```
 
 ### Tools Available to the LLM
 
@@ -95,7 +169,6 @@ The scraper (`scraper/scrape_partselect.py`) uses Playwright to scrape live data
 ```
 ├── backend/
 │   ├── agent/
-│   │   ├── intent_guard.py     # Off-topic filter with LLM classification
 │   │   ├── loop.py             # Agentic tool-calling loop with SSE streaming
 │   │   ├── system_prompt.py    # LLM instructions and rules
 │   │   └── tools/              # 7 tool implementations
