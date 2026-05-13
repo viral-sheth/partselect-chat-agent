@@ -8,6 +8,26 @@ interface CompatibilityCardProps {
 }
 
 export function CompatibilityCard({ result }: CompatibilityCardProps) {
+  const notInCatalog = result.notes?.toLowerCase().includes("not found in our catalog");
+
+  if (notInCatalog) {
+    return (
+      <div className="border border-amber-200 bg-amber-50 rounded-lg p-4 w-full">
+        <div className="flex items-center gap-2 mb-2">
+          <AlertTriangle className="text-amber-500" size={20} />
+          <span className="font-semibold text-sm text-amber-800">Part Not in Catalog</span>
+        </div>
+        <div className="text-xs text-gray-700 space-y-1">
+          <p><span className="font-medium">Part:</span> {result.part_number}</p>
+          <p><span className="font-medium">Model:</span> {result.model_number}</p>
+        </div>
+        <p className="text-xs text-gray-600 mt-2">
+          This part number isn't in our current catalog. Try searching by symptom or appliance type to find available parts.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`border rounded-lg p-4 w-full ${
@@ -34,12 +54,8 @@ export function CompatibilityCard({ result }: CompatibilityCardProps) {
 
       {/* Details */}
       <div className="text-xs text-gray-700 space-y-1">
-        <p>
-          <span className="font-medium">Part:</span> {result.part_number}
-        </p>
-        <p>
-          <span className="font-medium">Model:</span> {result.model_number}
-        </p>
+        <p><span className="font-medium">Part:</span> {result.part_number}</p>
+        <p><span className="font-medium">Model:</span> {result.model_number}</p>
       </div>
 
       {/* Notes */}
