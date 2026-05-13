@@ -1,0 +1,729 @@
+[
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000001",
+    "part_number": "PS11752778",
+    "manufacturer_part_number": "W10822278",
+    "name": "Dishwasher Water Inlet Valve",
+    "description": "Genuine OEM water inlet valve for Whirlpool, Maytag, and KitchenAid dishwashers. Controls water flow into the dishwasher. If your dishwasher is not filling with water or overfilling, this valve is likely the cause. Replaces W10822278, AP6023305.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 49.55,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11752778.jpg",
+    "product_url": "https://www.partselect.com/PS11752778-Whirlpool-W10822278-Dishwasher-Water-Inlet-Valve.htm",
+    "symptom_tags": [
+      "dishwasher not filling with water",
+      "dishwasher overfilling",
+      "dishwasher leaking",
+      "water inlet valve failure",
+      "no water entering dishwasher"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT780SAEM2",
+      "WDT750SAHZ0", "WDT730PAHZ0", "WDF520PADM7",
+      "WDF520PADM4", "WDT710PAHZ0", "KDTM354DSS4",
+      "MDB8959SFZ4", "MDB8959SFZ2", "KUDS30IVBL8"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000002",
+    "part_number": "PS11745239",
+    "manufacturer_part_number": "W10811165",
+    "name": "Dishwasher Control Board",
+    "description": "Electronic control board for Whirlpool dishwashers. Controls all dishwasher functions including wash cycles, drying, and water temperature. Replace if dishwasher displays error codes or does not respond to buttons.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 189.00,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11745239.jpg",
+    "product_url": "https://www.partselect.com/PS11745239-Whirlpool-W10811165-Dishwasher-Control-Board.htm",
+    "symptom_tags": [
+      "dishwasher not starting",
+      "control panel not working",
+      "dishwasher displaying error code",
+      "buttons not responding",
+      "dishwasher stops mid-cycle"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0",
+      "WDT730PAHZ0", "WDF520PADM7", "WDF520PADM4"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000003",
+    "part_number": "PS11752028",
+    "manufacturer_part_number": "W10780040",
+    "name": "Dishwasher Circulation Pump and Motor",
+    "description": "Circulation pump and motor assembly for Whirlpool and Maytag dishwashers. The pump circulates water through the spray arms during the wash cycle. Replace if dishwasher is not cleaning dishes or is making loud noise during the wash cycle.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 124.30,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11752028.jpg",
+    "product_url": "https://www.partselect.com/PS11752028-Whirlpool-W10780040-Dishwasher-Pump-Motor.htm",
+    "symptom_tags": [
+      "dishwasher not cleaning dishes",
+      "dishwasher making loud noise",
+      "dishes not getting clean",
+      "pump failure",
+      "poor wash performance"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0",
+      "WDF520PADM7", "MDB8959SFZ4", "MDB8959SFZ2"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000004",
+    "part_number": "PS11769212",
+    "manufacturer_part_number": "W10727422",
+    "name": "Dishwasher Upper Spray Arm",
+    "description": "Upper spray arm for Whirlpool dishwashers. Sprays water on the upper rack dishes during wash cycles. Replace if dishes on the upper rack are not getting clean or if the spray arm is cracked or clogged.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 28.75,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11769212.jpg",
+    "product_url": "https://www.partselect.com/PS11769212-Whirlpool-W10727422-Dishwasher-Upper-Spray-Arm.htm",
+    "symptom_tags": [
+      "upper rack dishes not clean",
+      "spray arm cracked",
+      "poor cleaning upper rack",
+      "clogged spray arm",
+      "dishwasher not cleaning top rack"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0",
+      "WDT730PAHZ0", "WDF520PADM7"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000005",
+    "part_number": "PS11757304",
+    "manufacturer_part_number": "W10850973",
+    "name": "Dishwasher Drain Pump",
+    "description": "Drain pump for Whirlpool dishwashers. Pumps water out of the dishwasher at the end of the wash and rinse cycles. If your dishwasher is not draining or has standing water after a cycle, this pump may need replacement.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 67.40,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11757304.jpg",
+    "product_url": "https://www.partselect.com/PS11757304-Whirlpool-W10850973-Dishwasher-Drain-Pump.htm",
+    "symptom_tags": [
+      "dishwasher not draining",
+      "standing water in dishwasher",
+      "water left after cycle",
+      "drain pump failure",
+      "dishwasher flooding"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0",
+      "WDF520PADM7", "MDB8959SFZ4"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000006",
+    "part_number": "PS11758926",
+    "manufacturer_part_number": "W10195039",
+    "name": "Dishwasher Door Latch Assembly",
+    "description": "Door latch assembly for Whirlpool dishwashers. The latch holds the door closed during the wash cycle. If the door won't stay closed or the dishwasher won't start because the door latch isn't engaging, replace this part.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 22.10,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11758926.jpg",
+    "product_url": "https://www.partselect.com/PS11758926-Whirlpool-W10195039-Dishwasher-Door-Latch.htm",
+    "symptom_tags": [
+      "dishwasher door not closing",
+      "dishwasher won't start door open",
+      "door latch broken",
+      "door won't latch",
+      "dishwasher door loose"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT750SAHZ0", "WDF520PADM7",
+      "WDT730PAHZ0", "MDB8959SFZ4"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000007",
+    "part_number": "PS11743653",
+    "manufacturer_part_number": "W10712395",
+    "name": "Dishwasher Detergent and Rinse Aid Dispenser",
+    "description": "Detergent and rinse aid dispenser for Whirlpool dishwashers. Dispenses detergent at the right time in the wash cycle. Replace if the dispenser door is not opening or detergent remains in the dispenser after the wash cycle.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 44.90,
+    "in_stock": false,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11743653.jpg",
+    "product_url": "https://www.partselect.com/PS11743653-Whirlpool-W10712395-Dishwasher-Dispenser.htm",
+    "symptom_tags": [
+      "detergent not dispensing",
+      "dispenser door not opening",
+      "detergent left in dispenser",
+      "rinse aid not dispensing",
+      "dishes not getting clean soap"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000008",
+    "part_number": "PS11770383",
+    "manufacturer_part_number": "WPW10189703",
+    "name": "Refrigerator Evaporator Fan Motor",
+    "description": "Evaporator fan motor for Whirlpool and Maytag refrigerators. Circulates cold air throughout the refrigerator and freezer compartments. If your refrigerator is not cooling properly or you hear a loud noise from the freezer, the evaporator fan motor may need replacement.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 54.75,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11770383.jpg",
+    "product_url": "https://www.partselect.com/PS11770383-Whirlpool-WPW10189703-Refrigerator-Evaporator-Fan-Motor.htm",
+    "symptom_tags": [
+      "refrigerator not cooling",
+      "freezer not cold enough",
+      "loud noise from freezer",
+      "refrigerator too warm",
+      "fan not spinning",
+      "clicking noise refrigerator"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "MFI2570FEZ00", "WRB322DMBM00",
+      "GSS25GSHSS", "WRF540CWHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000009",
+    "part_number": "PS11745111",
+    "manufacturer_part_number": "W10884390",
+    "name": "Refrigerator Ice Maker Assembly",
+    "description": "Complete ice maker assembly for Whirlpool side-by-side and French door refrigerators. Produces ice cubes and ejects them into the ice bin. Replace if the ice maker has stopped producing ice, is making too little ice, or is leaking water.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 89.99,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11745111.jpg",
+    "product_url": "https://www.partselect.com/PS11745111-Whirlpool-W10884390-Refrigerator-Ice-Maker-Assembly.htm",
+    "symptom_tags": [
+      "ice maker not working",
+      "ice maker not making ice",
+      "no ice production",
+      "ice maker stopped",
+      "ice maker leaking",
+      "ice maker making too little ice"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "WRS588FIHZ00", "WRF560SFHZ00",
+      "WRF540CWHZ00", "WRX735SDHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000010",
+    "part_number": "PS11756150",
+    "manufacturer_part_number": "W10295370A",
+    "name": "Refrigerator Water Filter",
+    "description": "Genuine OEM water filter for Whirlpool refrigerators with built-in water dispensers and ice makers. Reduces contaminants and improves taste and odor. Replace every 6 months for optimal performance. Compatible with EveryDrop Filter 1.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 19.99,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11756150.jpg",
+    "product_url": "https://www.partselect.com/PS11756150-Whirlpool-W10295370A-Refrigerator-Water-Filter.htm",
+    "symptom_tags": [
+      "ice maker not making ice",
+      "water tastes bad",
+      "water filter light on",
+      "slow water dispenser",
+      "water dispenser low pressure",
+      "bad tasting ice"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "WRS588FIHZ00", "WRF560SFHZ00",
+      "WRF540CWHZ00", "WRX735SDHZ00", "WRB322DMBM00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000011",
+    "part_number": "PS11752153",
+    "manufacturer_part_number": "W10408179",
+    "name": "Refrigerator Water Inlet Valve",
+    "description": "Water inlet valve for Whirlpool refrigerators. Controls water flow to the ice maker and water dispenser. Replace if your refrigerator is not making ice, water dispenser is not working, or the valve is leaking.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 42.60,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11752153.jpg",
+    "product_url": "https://www.partselect.com/PS11752153-Whirlpool-W10408179-Refrigerator-Water-Inlet-Valve.htm",
+    "symptom_tags": [
+      "ice maker not working",
+      "no water from dispenser",
+      "water dispenser not working",
+      "refrigerator leaking water",
+      "ice maker not getting water"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "WRS588FIHZ00", "WRF560SFHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000012",
+    "part_number": "PS12584615",
+    "manufacturer_part_number": "W10225581",
+    "name": "Refrigerator Defrost Thermostat",
+    "description": "Defrost thermostat for Whirlpool refrigerators. Monitors the temperature of the evaporator coils and signals the defrost heater to turn off when the coils reach the appropriate temperature. Replace if frost is building up in the freezer or refrigerator is not cooling properly.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 18.45,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS12584615.jpg",
+    "product_url": "https://www.partselect.com/PS12584615-Whirlpool-W10225581-Refrigerator-Defrost-Thermostat.htm",
+    "symptom_tags": [
+      "frost buildup in freezer",
+      "refrigerator not cooling",
+      "excessive ice buildup",
+      "freezer frosting over",
+      "defrost not working"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS321SDHZ01", "WRF535SWHZ00",
+      "MFI2570FEZ00", "WRB322DMBM00", "GSS25GSHSS"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000013",
+    "part_number": "PS11754386",
+    "manufacturer_part_number": "W10503278",
+    "name": "Refrigerator Ice Maker Water Inlet Valve Tube",
+    "description": "Water supply tube for the ice maker on Whirlpool refrigerators. Connects the water inlet valve to the ice maker. Replace if cracked, kinked, or leaking.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 14.20,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11754386.jpg",
+    "product_url": "https://www.partselect.com/PS11754386-Whirlpool-W10503278-Refrigerator-Ice-Maker-Fill-Tube.htm",
+    "symptom_tags": [
+      "ice maker leaking",
+      "water leaking inside refrigerator",
+      "ice maker not getting water",
+      "kinked water tube ice maker"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "WRS588FIHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000014",
+    "part_number": "PS11756045",
+    "manufacturer_part_number": "W10312695",
+    "name": "Refrigerator Door Gasket - Left",
+    "description": "Left door gasket/seal for Whirlpool French door refrigerators. Creates an airtight seal to keep cold air inside. Replace if the refrigerator is not maintaining temperature, you can feel warm air leaking in, or the gasket is torn or damaged.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 55.10,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11756045.jpg",
+    "product_url": "https://www.partselect.com/PS11756045-Whirlpool-W10312695-Refrigerator-Door-Gasket.htm",
+    "symptom_tags": [
+      "refrigerator not maintaining temperature",
+      "warm air leaking into refrigerator",
+      "door seal torn",
+      "door gasket damaged",
+      "refrigerator running constantly",
+      "condensation on refrigerator door"
+    ],
+    "model_numbers": [
+      "WRF535SWHZ00", "WRF560SFHZ00", "WRF540CWHZ00",
+      "WRX735SDHZ00", "WRF555SDFZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000015",
+    "part_number": "PS11749893",
+    "manufacturer_part_number": "W10190965",
+    "name": "Refrigerator Compressor Start Relay",
+    "description": "Compressor start relay for Whirlpool refrigerators. Helps start the compressor motor. If your refrigerator is not cooling at all, making a clicking noise every few minutes, or the compressor won't stay running, this relay may be faulty.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 13.75,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11749893.jpg",
+    "product_url": "https://www.partselect.com/PS11749893-Whirlpool-W10190965-Refrigerator-Compressor-Start-Relay.htm",
+    "symptom_tags": [
+      "refrigerator not cooling",
+      "clicking noise refrigerator",
+      "compressor not running",
+      "refrigerator not starting",
+      "refrigerator stops cooling"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "MFI2570FEZ00", "WRB322DMBM00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000016",
+    "part_number": "PS11757499",
+    "manufacturer_part_number": "W10882923",
+    "name": "Refrigerator Ice Maker Shut Off Arm",
+    "description": "Ice maker shut-off arm for Whirlpool refrigerators. The arm rises as the ice bin fills up and shuts off ice production when the bin is full. Replace if the ice maker continues to make ice when the bin is full or if no ice is being made.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 11.30,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11757499.jpg",
+    "product_url": "https://www.partselect.com/PS11757499-Whirlpool-W10882923-Refrigerator-Ice-Maker-Shut-Off-Arm.htm",
+    "symptom_tags": [
+      "ice maker not stopping",
+      "ice overflowing ice bin",
+      "ice maker not making ice",
+      "shut off arm broken",
+      "ice maker always on"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRS321SDHZ01",
+      "WRS588FIHZ00", "WRF560SFHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000017",
+    "part_number": "PS11770942",
+    "manufacturer_part_number": "W10215904",
+    "name": "Refrigerator Condenser Fan Motor",
+    "description": "Condenser fan motor for Whirlpool refrigerators. Cools the condenser coils and compressor. If your refrigerator is not cooling properly and the compressor feels very hot, or if you hear loud noise from the back/bottom of the refrigerator, the condenser fan motor may need replacement.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 46.85,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11770942.jpg",
+    "product_url": "https://www.partselect.com/PS11770942-Whirlpool-W10215904-Refrigerator-Condenser-Fan-Motor.htm",
+    "symptom_tags": [
+      "refrigerator not cooling",
+      "compressor overheating",
+      "loud noise from back of refrigerator",
+      "condenser fan not spinning",
+      "refrigerator running warm"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRS321SDHZ01", "WRB322DMBM00", "MFI2570FEZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000018",
+    "part_number": "PS11755660",
+    "manufacturer_part_number": "W10346771",
+    "name": "Refrigerator Defrost Heater Assembly",
+    "description": "Defrost heater assembly for Whirlpool refrigerators. Melts frost that accumulates on the evaporator coils during the automatic defrost cycle. Replace if frost is building up excessively in the freezer, reducing cooling efficiency.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 32.40,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11755660.jpg",
+    "product_url": "https://www.partselect.com/PS11755660-Whirlpool-W10346771-Refrigerator-Defrost-Heater.htm",
+    "symptom_tags": [
+      "frost buildup in freezer",
+      "freezer icing over",
+      "refrigerator not defrosting",
+      "excessive ice in freezer",
+      "defrost heater failure"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRS321SDHZ01",
+      "MFI2570FEZ00", "WRB322DMBM00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000019",
+    "part_number": "PS11773144",
+    "manufacturer_part_number": "W10503278",
+    "name": "Refrigerator Temperature Control Thermostat",
+    "description": "Temperature control thermostat for Whirlpool refrigerators. Regulates the refrigerator and freezer temperature. Replace if the refrigerator is too cold, not cold enough, or runs constantly.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 29.99,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11773144.jpg",
+    "product_url": "https://www.partselect.com/PS11773144-Whirlpool-W10503278-Refrigerator-Temperature-Thermostat.htm",
+    "symptom_tags": [
+      "refrigerator too cold",
+      "refrigerator not cold enough",
+      "refrigerator runs constantly",
+      "temperature control not working",
+      "food freezing in refrigerator"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRF535SWHZ00",
+      "WRB322DMBM00", "MFI2570FEZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000020",
+    "part_number": "PS11748072",
+    "manufacturer_part_number": "WPW10321304",
+    "name": "Refrigerator Ice and Water Dispenser Control Board",
+    "description": "Ice and water dispenser control board for Whirlpool French door refrigerators. Controls the ice and water dispenser functions on the door. Replace if dispenser is not working, lights are not functioning, or buttons are unresponsive.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 115.60,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11748072.jpg",
+    "product_url": "https://www.partselect.com/PS11748072-Whirlpool-WPW10321304-Refrigerator-Dispenser-Board.htm",
+    "symptom_tags": [
+      "ice dispenser not working",
+      "water dispenser not working",
+      "dispenser buttons not responding",
+      "dispenser light not working",
+      "ice and water not dispensing"
+    ],
+    "model_numbers": [
+      "WRF535SWHZ00", "WRF560SFHZ00", "WRF540CWHZ00",
+      "WRX735SDHZ00", "WRF555SDFZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000021",
+    "part_number": "PS11744021",
+    "manufacturer_part_number": "W10437781",
+    "name": "Samsung Refrigerator Ice Maker Assembly",
+    "description": "Complete ice maker assembly for Samsung French door refrigerators. Includes ice maker, motor, and heating element. Replace when ice production stops completely or ice maker is not cycling properly.",
+    "category": "refrigerator",
+    "brand": "samsung",
+    "price": 129.95,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11744021.jpg",
+    "product_url": "https://www.partselect.com/PS11744021-Samsung-DA97-15217D-Refrigerator-Ice-Maker.htm",
+    "symptom_tags": [
+      "ice maker not working",
+      "no ice production samsung",
+      "ice maker not cycling",
+      "samsung fridge no ice",
+      "ice maker stopped working"
+    ],
+    "model_numbers": [
+      "RF28R7351SR", "RF23M8070SR", "RF28HMEDBSR",
+      "RF263BEAESR", "RF28JBEDBSG", "RFG298HDRS"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000022",
+    "part_number": "PS11770522",
+    "manufacturer_part_number": "DA61-06604A",
+    "name": "Samsung Refrigerator Water Inlet Valve",
+    "description": "Water inlet valve for Samsung refrigerators. Dual valve controls water to both the ice maker and door water dispenser. Replace if the ice maker or water dispenser is not getting water.",
+    "category": "refrigerator",
+    "brand": "samsung",
+    "price": 57.80,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11770522.jpg",
+    "product_url": "https://www.partselect.com/PS11770522-Samsung-DA61-06604A-Refrigerator-Water-Inlet-Valve.htm",
+    "symptom_tags": [
+      "ice maker not working",
+      "water dispenser not working",
+      "no water to ice maker",
+      "samsung refrigerator no water",
+      "water inlet valve leaking"
+    ],
+    "model_numbers": [
+      "RF28R7351SR", "RF23M8070SR", "RF28HMEDBSR",
+      "RF263BEAESR", "RF28JBEDBSG"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000023",
+    "part_number": "PS11746503",
+    "manufacturer_part_number": "LG AEQ73110210",
+    "name": "LG Refrigerator Ice Maker Assembly",
+    "description": "OEM ice maker assembly for LG French door and side-by-side refrigerators. Complete replacement kit includes ice maker unit. A common fix for LG refrigerators that have stopped producing ice.",
+    "category": "refrigerator",
+    "brand": "lg",
+    "price": 145.00,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11746503.jpg",
+    "product_url": "https://www.partselect.com/PS11746503-LG-AEQ73110210-Refrigerator-Ice-Maker.htm",
+    "symptom_tags": [
+      "LG ice maker not working",
+      "no ice LG refrigerator",
+      "LG fridge ice maker stopped",
+      "ice maker not making ice lg",
+      "LG refrigerator ice problem"
+    ],
+    "model_numbers": [
+      "LRMVS3006S", "LRFXS2503S", "LRMVS3006D",
+      "LRFDS3006S", "LFXS26973S", "LRMVS3006V"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000024",
+    "part_number": "PS11758444",
+    "manufacturer_part_number": "WPW10300022",
+    "name": "Refrigerator Shelf Support Clip",
+    "description": "Shelf support clip for Whirlpool refrigerators. Holds shelves in place inside the refrigerator compartment. Replace if a clip is broken or missing and the shelf is unstable.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 6.50,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11758444.jpg",
+    "product_url": "https://www.partselect.com/PS11758444-Whirlpool-WPW10300022-Refrigerator-Shelf-Clip.htm",
+    "symptom_tags": [
+      "shelf falling in refrigerator",
+      "shelf not staying in place",
+      "shelf support broken",
+      "shelf clip missing",
+      "refrigerator shelf loose"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRF535SWHZ00", "WRF560SFHZ00",
+      "WRS321SDHZ01", "WRB322DMBM00", "WRF540CWHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000025",
+    "part_number": "PS11756892",
+    "manufacturer_part_number": "W10547671",
+    "name": "Refrigerator LED Light Board",
+    "description": "LED light board for Whirlpool French door refrigerators. Provides interior lighting in the refrigerator compartment. Replace if the refrigerator light is out or flickering.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 38.20,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11756892.jpg",
+    "product_url": "https://www.partselect.com/PS11756892-Whirlpool-W10547671-Refrigerator-LED-Light-Board.htm",
+    "symptom_tags": [
+      "refrigerator light not working",
+      "refrigerator light flickering",
+      "interior light out",
+      "LED light failure refrigerator",
+      "dark inside refrigerator"
+    ],
+    "model_numbers": [
+      "WRF535SWHZ00", "WRF560SFHZ00", "WRF540CWHZ00",
+      "WRX735SDHZ00", "WRF555SDFZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000026",
+    "part_number": "PS11769505",
+    "manufacturer_part_number": "W10190934",
+    "name": "GE Dishwasher Spray Arm",
+    "description": "Lower spray arm for GE dishwashers. Distributes water to clean the lower rack dishes. If dishes on the bottom rack are not getting clean, check if the spray arm holes are clogged or the arm is cracked.",
+    "category": "dishwasher",
+    "brand": "ge",
+    "price": 24.50,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11769505.jpg",
+    "product_url": "https://www.partselect.com/PS11769505-GE-WD22X10079-Dishwasher-Lower-Spray-Arm.htm",
+    "symptom_tags": [
+      "lower rack dishes not clean",
+      "spray arm clogged",
+      "bottom rack not cleaning",
+      "GE dishwasher not cleaning",
+      "dishes dirty after wash"
+    ],
+    "model_numbers": [
+      "GDT665SSNSS", "GDT665SSMSS", "PDT715SYNFS",
+      "GDF620HMKES", "CDT836P2NS1", "GDT695SSJSS"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000027",
+    "part_number": "PS11756388",
+    "manufacturer_part_number": "WD21X24900",
+    "name": "GE Dishwasher Pump and Motor Assembly",
+    "description": "Pump and motor assembly for GE dishwashers. The motor drives the pump which circulates water during washing. Replace if the dishwasher is not washing dishes or is making humming or grinding noises.",
+    "category": "dishwasher",
+    "brand": "ge",
+    "price": 198.75,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11756388.jpg",
+    "product_url": "https://www.partselect.com/PS11756388-GE-WD21X24900-Dishwasher-Pump-Motor.htm",
+    "symptom_tags": [
+      "GE dishwasher not washing",
+      "dishwasher humming noise",
+      "grinding noise dishwasher",
+      "pump motor failure GE",
+      "dishwasher not cleaning dishes"
+    ],
+    "model_numbers": [
+      "GDT665SSNSS", "PDT715SYNFS", "GDF620HMKES",
+      "CDT836P2NS1", "GDT695SSJSS"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000028",
+    "part_number": "PS11743202",
+    "manufacturer_part_number": "W10084141",
+    "name": "Dishwasher Silverware Basket",
+    "description": "Silverware and utensil basket for Whirlpool dishwashers. Holds silverware and small utensils during the wash cycle. Replace if the basket is cracked, missing dividers, or the handle is broken.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 21.00,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11743202.jpg",
+    "product_url": "https://www.partselect.com/PS11743202-Whirlpool-W10084141-Dishwasher-Silverware-Basket.htm",
+    "symptom_tags": [
+      "silverware basket broken",
+      "utensil holder cracked",
+      "cutlery basket missing",
+      "silverware falling through basket",
+      "dishwasher basket damaged"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT750SAHZ0",
+      "WDF520PADM7", "WDT730PAHZ0"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000029",
+    "part_number": "PS11768579",
+    "manufacturer_part_number": "W10462587",
+    "name": "Refrigerator Ice Bucket Auger Motor",
+    "description": "Ice bucket auger motor for Whirlpool refrigerators with in-door ice dispensers. Turns the auger that moves ice from the bucket to the dispenser chute. Replace if the ice dispenser is not dispensing ice when the paddle is pressed.",
+    "category": "refrigerator",
+    "brand": "whirlpool",
+    "price": 72.35,
+    "in_stock": false,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11768579.jpg",
+    "product_url": "https://www.partselect.com/PS11768579-Whirlpool-W10462587-Refrigerator-Auger-Motor.htm",
+    "symptom_tags": [
+      "ice dispenser not working",
+      "ice not coming out dispenser",
+      "auger motor failure",
+      "dispenser paddle not dispensing",
+      "ice stuck in dispenser"
+    ],
+    "model_numbers": [
+      "WRS325SDHZ01", "WRS325SDHZ05", "WRS321SDHZ01",
+      "WRS588FIHZ00"
+    ]
+  },
+  {
+    "id": "a1b2c3d4-0001-0001-0001-000000000030",
+    "part_number": "PS11771700",
+    "manufacturer_part_number": "W10869845",
+    "name": "Dishwasher Control Panel",
+    "description": "Control panel overlay and keypad for Whirlpool dishwashers. Includes all the buttons for selecting wash cycles and options. Replace if buttons are cracking, not responding, or the panel overlay is peeling.",
+    "category": "dishwasher",
+    "brand": "whirlpool",
+    "price": 76.40,
+    "in_stock": true,
+    "image_url": "https://www.partselect.com/assets/metaimg/PS11771700.jpg",
+    "product_url": "https://www.partselect.com/PS11771700-Whirlpool-W10869845-Dishwasher-Control-Panel.htm",
+    "symptom_tags": [
+      "dishwasher buttons not working",
+      "control panel cracked",
+      "cycle buttons unresponsive",
+      "panel overlay peeling",
+      "dishwasher not starting buttons"
+    ],
+    "model_numbers": [
+      "WDT780SAEM1", "WDT780SAEM0", "WDT780SAEM2",
+      "WDT750SAHZ0"
+    ]
+  }
+]
