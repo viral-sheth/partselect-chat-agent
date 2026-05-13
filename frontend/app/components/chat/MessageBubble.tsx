@@ -45,6 +45,20 @@ function MarkdownText({ content }: { content: string }) {
       continue;
     }
 
+    // Headings ## and ###
+    if (/^#{1,3}\s/.test(line.trim())) {
+      const level = (line.match(/^(#{1,3})\s/) || [])[1]?.length || 2;
+      const text = line.trim().replace(/^#{1,3}\s/, "");
+      const cls = level === 1
+        ? "text-base font-bold text-gray-900 mt-2"
+        : level === 2
+        ? "text-sm font-bold text-gray-800 mt-2"
+        : "text-sm font-semibold text-gray-700 mt-1";
+      nodes.push(<p key={i} className={cls}>{renderInline(text)}</p>);
+      i++;
+      continue;
+    }
+
     // Unordered list block
     if (/^[\*\-]\s/.test(line.trim())) {
       const items: React.ReactNode[] = [];

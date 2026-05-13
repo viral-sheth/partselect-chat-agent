@@ -5,8 +5,8 @@ interface SuggestionChipsProps {
 }
 
 const SUGGESTIONS = [
-  "How can I install part number PS11752778?",
-  "Is part PS11752778 compatible with model WDT780SAEM1?",
+  "How can I install part number PS3406971?",
+  "Is part PS3406971 compatible with model WDT780SAEM1?",
   "The ice maker on my Whirlpool fridge is not working",
   "My dishwasher is not draining properly",
 ];
