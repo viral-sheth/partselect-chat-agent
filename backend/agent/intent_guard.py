@@ -1,3 +1,4 @@
+import re
 from groq import AsyncGroq
 from config import get_settings
 
@@ -17,6 +18,20 @@ CONTINUATION_PHRASES = {
     "correct", "right", "exactly", "maybe", "not sure", "i don't know",
 }
 
+# Regex patterns that are ALWAYS appliance-related — never sent to LLM guard
+ALWAYS_ALLOW_PATTERNS = [
+    r"\b(dishwasher|refrigerator|fridge|freezer|ice\s*maker|washer|dryer)\b",
+    r"\b(not\s+drain|not\s+work|not\s+cool|not\s+heat|not\s+start|leaking|broken|broken)\b",
+    r"\bpart\s*(number)?\s*ps\d+\b",
+    r"\bmodel\s+(number)?\s*[a-z0-9]{5,}\b",
+    r"\b(install|replace|fix|repair|troubleshoot|diagnose)\b",
+    r"\b(cart|order|tracking|shipment|delivery|order\s+number|order\s+#)\b",
+    r"\b(water\s+filter|door\s+seal|ice\s+maker|drain\s+pump|door\s+latch)\b",
+    r"\b(add|remove).{0,20}(cart|basket)\b",
+    r"\bwhere\s+is\s+my\s+order\b",
+    r"\bmy\s+(fridge|refrigerator|dishwasher|freezer|appliance)\b",
+]
+
 GUARD_PROMPT = """You are classifying whether a user message is relevant to an appliance parts assistant.
 The assistant helps with: refrigerator parts, dishwasher parts, appliance repair, part compatibility,
 installation instructions, cart, and orders.
@@ -31,6 +46,12 @@ Classify the message as ONE of:
 - greeting: hello, hi, general polite opener
 - continuation: short reply continuing a conversation (yes, no, sure, show me, add it, etc.)
 - off_topic: clearly unrelated (cooking recipes, weather, sports, general tech help, etc.)
+
+Examples of valid (NOT off_topic):
+- "My dishwasher is not draining" → troubleshooting
+- "Where is my order 12345" → order
+- "Add PS3406971 to my cart" → cart
+- "How do I fix my ice maker" → troubleshooting
 
 When in doubt, choose the closest appliance-related category rather than off_topic.
 Respond with ONLY the category word, nothing else."""
@@ -52,6 +73,11 @@ async def classify_intent(message: str, history: list = None) -> str:
     if normalized in CONTINUATION_PHRASES:
         return "continuation"
 
+    # Bypass LLM if message matches always-allow appliance patterns
+    for pattern in ALWAYS_ALLOW_PATTERNS:
+        if re.search(pattern, normalized, re.IGNORECASE):
+            return "product"
+
     # Bypass LLM for very short messages (≤3 words) when there's prior history
     words = normalized.split()
     if len(words) <= 3 and history:
@@ -60,7 +86,7 @@ async def classify_intent(message: str, history: list = None) -> str:
     client = get_client()
     messages = [{"role": "system", "content": GUARD_PROMPT}]
 
-    # Add last 2 turns of history as context so the guard can judge continuations
+    # Add last 2 turns of history as context
     if history:
         for turn in history[-4:]:
             role = turn.get("role", "user")
